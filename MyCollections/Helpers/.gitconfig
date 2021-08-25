@@ -1,0 +1,24 @@
+
+[user]
+	name = phungtung684
+	email = tungphung684@gmail.com
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	log12 = log --oneline -12	
+	log22 = log --oneline -22
+	ciamend = commit --amend --no-edit
+	pushof = push origin HEAD -f
+	pushn  = push origin HEAD
+	rt = remote
+	pullo = pull origin develop
+[core]
+	excludesfile = /Users/phungtung/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
